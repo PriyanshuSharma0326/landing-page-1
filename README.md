@@ -3,4 +3,5 @@
 
 ## Welcome! 👋
 
-A simple Landing Page for a furniture site. View for 1536 x 745.6
+A simple Landing Page for a furniture site.
+Not responsive.
