@@ -3,5 +3,4 @@
 
 ## Welcome! 👋
 
-A simple Landing Page for a furniture site.
-Not responsive.
+A simple responsive Landing Page for a furniture site.
