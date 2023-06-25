@@ -36,6 +36,39 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    position: relative;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 3.25rem;
+
+    position: absolute;
+    top: 4rem;
+    left: 4.25rem;
+}
+
+.title {
+    font-size: 1.75rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    cursor: default;
+}
+
+.header-links {
+    display: flex;
+    gap: 1.85rem;
+    margin-top: 0.25rem;
+}
+
+.header-link {
+    font-size: 0.85rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
 }
 
 .top-container {
@@ -66,7 +99,6 @@ main {
     bottom: 0;
     width: 25.15%;
     height: 14.5%;
-    /* background-color: black; */
     display: flex;
 }
 
@@ -79,6 +111,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .button-left > img, .button-right > img {
@@ -166,4 +199,205 @@ main {
 
 .bottom-container-right-image > img {
     width: 100%;
+}
+
+@media screen and (max-width: 1440px) {
+    .header {
+        top: 3.25rem;
+        left: 4rem;
+    }
+    
+    .title {
+        font-size: 1.5rem;
+    }
+    
+    .header-link {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header {
+        gap: 2.25rem;
+        top: 2.5rem;
+        left: 3rem;
+    }
+    
+    .title {
+        font-size: 1rem;
+    }
+    
+    .header-links {
+        gap: 1.35rem;
+        margin-top: 0;
+    }
+    
+    .header-link {
+        font-size: 0.6rem;
+    }
+
+    .top-container-text {
+        padding: 4.75rem 3rem 0 3.9rem;
+    }
+
+    .description-title {
+        font-size: 1.6rem;
+        line-height: 2.25rem;
+    }
+
+    .description-container {
+        gap: 1rem;
+    }
+
+    .description-text, .product-description-text {
+        font-size: 0.6rem;
+        line-height: 1.05rem;
+    }
+
+    .description-link {
+        gap: 1rem;
+    }
+
+    .link-text {
+        font-size: 0.75rem;
+        letter-spacing: 0.5rem;
+    }
+    
+    .link-arrow {
+        width: 2rem;
+    }
+
+    .bottom-container-text {
+        padding: 2.5rem 1rem 0 1rem;
+    }
+
+    .product-description-title {
+        font-size: 0.8rem;
+        letter-spacing: 0.15rem;
+        word-spacing: 0.1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        gap: 2.5rem;
+        top: 3rem;
+        left: 3.75rem;
+    }
+    
+    .title {
+        font-size: 1.4rem;
+    }
+    
+    .header-links {
+        gap: 1.65rem;
+    }
+    
+    .header-link {
+        font-size: 0.75rem;
+    }
+
+    .top-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .top-container-image {
+        width: 100%;
+    }
+
+    .top-container-text {
+        width: 100%;
+        padding: 4rem 7rem 6rem 7rem;
+    }
+
+    .button-container {
+        width: 7rem;
+        height: 3.5rem;
+    }
+
+    .description-link {
+        margin-top: 0;
+    }
+
+    .bottom-container-left-image {
+        width: 40%;
+    }
+
+    .bottom-container-text {
+        width: 60%;
+        padding: 2.5rem 2.75rem 0 2rem;
+    }
+
+    .bottom-container-right-image {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .header {
+        gap: 2rem;
+        top: 1.25rem;
+        left: 1.75rem;
+    }
+    
+    .title {
+        font-size: 1rem;
+    }
+    
+    .header-links {
+        gap: 1.65rem;
+        margin-top: 0.15rem;
+    }
+    
+    .header-link {
+        font-size: 0.65rem;
+    }
+
+    .top-container-text {
+        padding: 3rem 3rem 5rem 4rem;
+    }
+
+    .bottom-container {
+        flex-direction: column;
+    }
+
+    .bottom-container-left-image {
+        width: 100%;
+    }
+
+    .bottom-container-text {
+        width: 100%;
+        padding: 2.5rem 1.25rem 2.5rem 1.5rem;
+    }
+
+    .button-container {
+        width: 6rem;
+        height: 3rem;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .header {
+        gap: 1.75rem;
+        top: 1.15rem;
+        left: 1.65rem;
+    }
+    
+    .title {
+        font-size: 0.95rem;
+    }
+    
+    .header-links {
+        gap: 1.55rem;
+        margin-top: 0;
+    }
+    
+    .header-link {
+        font-size: 0.6rem;
+    }
+
+    .top-container-text {
+        padding: 3rem 2.5rem 5rem 2.5rem;
+    }
 }
